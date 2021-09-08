@@ -29,19 +29,19 @@
         @apply w-full h-full p-1 pt-11;
         @apply bg-gradient-to-tr from-green-500 to-blue-300;
         background-size: 300%;
-        animation: bg-animation 5s infinite alternate;
+        animation: bg-animation 25s infinite alternate;
     }
     .navbar {
         @apply fixed w-full p-1;
     }
     .body {
-        @apply flex flex-col;
+        @apply flex flex-col static;
     }
     .content {
         @apply h-screen bg-white p-1 rounded-b;
-        /* background-image: url(/2159510.jpg); */
         background-position: center;
         background-size: 155%;
+        background-filter: blur(30px);
     }
 
 </style>

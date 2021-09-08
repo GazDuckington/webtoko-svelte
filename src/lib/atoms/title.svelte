@@ -3,6 +3,11 @@
 </h1>
 
 <style>
+    @keyframes bg-animation {
+        0% {background-position: left}
+        50% {background-position: right}
+        100% {background-position: left}
+    }
     h1 {
         @apply text-transparent bg-clip-text font-black;
         @apply bg-gradient-to-tr from-purple-500 via-pink-500 to-yellow-500;
@@ -13,6 +18,7 @@
         transition: background-position 1s;
         line-height: .8;
         margin: 0;
+        animation: bg-animation 25s infinite alternate;
     }
     h1:hover {
         background-position: right;

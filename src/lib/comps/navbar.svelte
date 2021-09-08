@@ -24,6 +24,26 @@ import Linky from "$lib/atoms/linky.svelte";
     }
 </script>
 
+<!-- quick cart -->
+{#if qcart}
+        <div class="quick-cart rounded fixed">
+            <div class="flex justify-between p-1  bg-gradient-to-r from-green-500">
+                <h1 class="text-white">Cart</h1>
+                <button class="text-red-500" on:click={qCart}>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                </svg>
+                </button>
+            </div>
+            <div class="cart-view p-2">
+                <ul>
+                    <li>something for nothing</li>
+                    <li>something for nothing</li>
+                    <li>something for nothing</li>
+                </ul>
+            </div>
+        </div>
+{/if}
 <div class="navbar">
     <div class="navlogo">
         <Logo/>
@@ -44,7 +64,7 @@ import Linky from "$lib/atoms/linky.svelte";
     </div>
 </div>
 {#if show}
-    <div class="mobile" transition:slide={{duration:300}}>
+    <div class="mobile" on:click={toggle} transition:slide={{duration:300}}>
         <div class="mobile-menu flex flex-col">
             <Logo/>
             <p class="subtitle">Accounts</p>
@@ -70,32 +90,10 @@ import Linky from "$lib/atoms/linky.svelte";
     {/if}
 </button>
 
-<!-- quick cart -->
-{#if qcart}
-    <Modal>
-        <div class="quick-cart rounded">
-            <div class="flex justify-between p-1  bg-gradient-to-r from-green-500">
-                <h1 class="text-white">Cart</h1>
-                <button class="text-red-500" on:click={qCart}>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
-                </svg>
-                </button>
-            </div>
-            <div class="cart-view p-2">
-                <ul>
-                    <li>something for nothing</li>
-                    <li>something for nothing</li>
-                    <li>something for nothing</li>
-                </ul>
-            </div>
-        </div>
-    </Modal>
-{/if}
 <style>
     .quick-cart {
-        @apply max-w-full mx-48 my-10 flex flex-col justify-between shadow-2xl;
-        @apply bg-white;
+        @apply mx-48 my-10 flex flex-col justify-between shadow-2xl;
+        @apply bg-white border-2 rounded w-1/2;
     }
     .quick-cart h1 {
         @apply font-semibold;
