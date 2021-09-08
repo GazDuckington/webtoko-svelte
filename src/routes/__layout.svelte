@@ -29,7 +29,7 @@
         @apply w-full h-full p-1 pt-11;
         @apply bg-gradient-to-tr from-green-500 to-blue-300;
         background-size: 300%;
-        animation: bg-animation 5s infinite;
+        animation: bg-animation 5s infinite alternate;
     }
     .navbar {
         @apply fixed w-full p-1;
