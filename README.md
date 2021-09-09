@@ -1,3 +1,26 @@
+# Download Proyek
+#### Manual
+- Klik tombol hijau ber-label `Code` di sudut kanan repo
+- Klik Download ZIP
+- Extract File ter-download
+#### Git
+```bash
+git clone https://github.com/RegalOctopus/webtoko-svelte.git
+```
+
+# Development Lokal
+
+```bash
+# masuk ke direktori proyek
+cd webtoko-svelte
+# init node
+npm i
+# mulai server
+npm run dev
+# atau untuk otomatis buka browser
+npm run dev -- --open
+```
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
