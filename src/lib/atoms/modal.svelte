@@ -1,6 +1,8 @@
-<div class="modal">
-    <slot></slot>
-</div>
+<script>
+</script>
+    <div class="modal">
+        <slot></slot>
+    </div>
 
 <style>
     .modal {

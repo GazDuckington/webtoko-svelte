@@ -9,11 +9,9 @@
         <Navbar />
     </div>
     <!-- content -->
-    <div class="bg">
         <div class="content">
             <slot />
         </div>
-    </div>
 </div>
 
 <!-- footer -->
@@ -26,21 +24,19 @@
         100% {background-position: left}
     }
     .bg {
-        @apply w-full h-full p-1 pt-11;
+        @apply w-full h-full pt-8;
         @apply bg-gradient-to-tr from-green-500 to-blue-300;
         background-size: 300%;
         animation: bg-animation 25s infinite alternate;
     }
     .navbar {
-        @apply fixed w-full p-1;
+        @apply fixed w-full;
     }
     .body {
         @apply flex flex-col static;
     }
     .content {
-        @apply h-screen bg-white p-1 rounded-b;
-        background-position: center;
-        background-size: 155%;
+        @apply h-screen bg-white rounded-b pt-12;
         background-filter: blur(30px);
     }
 

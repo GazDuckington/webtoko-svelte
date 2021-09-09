@@ -18,7 +18,7 @@
         transition: background-position 1s;
         line-height: .8;
         margin: 0;
-        animation: bg-animation 25s infinite alternate;
+        /* animation: bg-animation 25s infinite alternate; */
     }
     h1:hover {
         background-position: right;
