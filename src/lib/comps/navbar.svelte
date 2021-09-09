@@ -26,8 +26,8 @@ import QuickCart from "./quickCart.svelte";
 <style>
 
     .navbar {
-        @apply p-2 pb-0;
-        @apply flex space-x-1 justify-between sticky w-full;
+        @apply p-2 pb-0 fixed;
+        @apply flex space-x-1 justify-between w-full;
         @apply shadow-sm font-semibold bg-white;
     }
 

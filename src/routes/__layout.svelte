@@ -30,7 +30,7 @@
         animation: bg-animation 25s infinite alternate;
     }
     .navbar {
-        @apply fixed w-full;
+        @apply w-full;
     }
     .body {
         @apply flex flex-col static;
