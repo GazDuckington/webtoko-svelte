@@ -1,7 +1,17 @@
+# Download Proyek
+#### Manual
+- Klik tombol hijau ber-label `Code` di sudut kanan repo
+- Klik Download ZIP
+- Extract File ter-download
+#### Git
+```bash
+git clone https://github.com/RegalOctopus/webtoko-svelte.git
+```
+
 # Development Lokal
 
 ```bash
-# masuk ke direktoro proyek
+# masuk ke direktori proyek
 cd webtoko-svelte
 # init node
 npm i
