@@ -23,12 +23,12 @@
         50% {background-position: right}
         100% {background-position: left}
     }
-    .bg {
+    /* .bg {
         @apply w-full h-full pt-8;
         @apply bg-gradient-to-tr from-green-500 to-blue-300;
         background-size: 300%;
         animation: bg-animation 25s infinite alternate;
-    }
+    } */
     .navbar {
         @apply w-full;
     }
