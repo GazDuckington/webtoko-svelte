@@ -1,3 +1,16 @@
+# Development Lokal
+
+```bash
+# masuk ke direktoro proyek
+cd webtoko-svelte
+# init node
+npm i
+# mulai server
+npm run dev
+# atau untuk otomatis buka browser
+npm run dev -- --open
+```
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
