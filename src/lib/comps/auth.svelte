@@ -1,8 +1,6 @@
 <script>
-import Linky from "$lib/atoms/linky.svelte";
-
+    import Linky from "$lib/atoms/linky.svelte";
     import AuthForm from "$lib/comps/authForm.svelte";
-    import GoogleForm from "$lib/comps/googleForm.svelte";
 
     export let view = "sign in" || "sign up";
 </script>
