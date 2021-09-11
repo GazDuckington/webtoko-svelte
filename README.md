@@ -1,3 +1,33 @@
+# Tentang Proyek
+JAMStack dengan menggunakan [Supabase](https://supabase.io) sebagai backend, dan [Sveltekit](https://kit.svelte.dev) sebagai framework frontend. Framework CSS yang digunakan adalah [tailwind](https://tailwindcss.com).
+#### Susunan proyek
+Proses pengembangan dilakukan dalam direktori 'src'
+```bash
+├──  src
+│  ├── app.html
+│  ├── lib
+│  │  ├── atoms
+│  │  │  └── komponen-komponen kecil (tombol, link, dsb)
+│  │  ├── comps
+│  │  │  └── Komponen-komponen web lebih lengkap (form, navbar, menu, dsb)
+│  │  └── db.ts // konektor supabase
+│  └── routes
+│     ├── __layout.svelte // layout root
+│     ├── index.svelte // halaman root ("/")
+│     └── signup // halaman 'nama folder'
+│        └── index.svelte // komponen halaman
+├── static // file-file statis
+│  └── favicon.png
+│   // pengaturan modul-modul dalam proyek
+├── svelte.config.js
+├── tailwind.config.cjs
+└── tsconfig.json
+```
+Dokumentasi penting:
+- [sveltekit](https://kit.svelte.dev/docs) 
+- [svelte](https://svelte.dev/docs)
+- [tailwind](https://tailwindcss.com/docs)
+
 # Download Proyek
 #### Manual
 - Klik tombol hijau ber-label `Code` di sudut kanan repo
@@ -13,40 +43,11 @@ git clone https://github.com/RegalOctopus/webtoko-svelte.git
 ```bash
 # masuk ke direktori proyek
 cd webtoko-svelte
-# init node
+# npm install
 npm i
 # mulai server
 npm run dev
 # atau untuk otomatis buka browser
-npm run dev -- --open
-```
-
-# create-svelte
-
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
 
