@@ -1,6 +1,14 @@
 <script>
-  import "../app.postcss";
-  import Navbar from "$lib/comps/navbar.svelte";
+    import "../app.postcss";
+    import Navbar from "$lib/comps/navbar.svelte";
+    import supabase from "$lib/db";
+    import { session } from "$app/stores";
+    import {browser} from "$app/env";
+
+    // supabase.auth.onAuthStateChange((event, sesh) => {
+    //     $session = sesh;
+    // })
+    $: console.log($session)
 </script>
 
 <div class="body">
@@ -11,6 +19,10 @@
     <!-- content -->
     <div class="content">
         <slot />
+
+    <p class="w-96 overflow-scroll">
+        {JSON.stringify($session)}
+    </p>
     </div>
 </div>
 

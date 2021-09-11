@@ -1,9 +1,18 @@
-<script>
+<script lang="ts">
+    import supabase from "$lib/db";
     import GoogleIcon from "../atoms/GoogleIcon.svelte";
     export let mode;
+
+    async function handleGoogle() {
+        const { user, error } = await supabase.auth.signIn({
+            provider: 'google'
+        })
+        if (error) { alert(error.message) }
+        else { console.log(user) }
+    }    
 </script>
 
-<button on:click={()=>authClickGoogle(mode)}>
+<button on:click={handleGoogle}>
     <div class="flex space-x-2 justify-center">
         <GoogleIcon/>
         <span>{mode} dengan google</span>
