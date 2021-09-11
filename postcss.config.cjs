@@ -13,7 +13,8 @@ const config = {
         autoprefixer(),
         !dev && cssnano({
 			preset: "default",
-		})
+		}),
+    require('postcss-nested')
     ],
 };
 

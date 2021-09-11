@@ -9,9 +9,9 @@
         <Navbar />
     </div>
     <!-- content -->
-        <div class="content">
-            <slot />
-        </div>
+    <div class="content">
+        <slot />
+    </div>
 </div>
 
 <!-- footer -->
@@ -34,6 +34,9 @@
     }
     .body {
         @apply flex flex-col static;
+        @apply bg-gradient-to-tr from-green-500 to-blue-300;
+        background-size: 300%;
+        animation: bg-animation 25s infinite alternate;
     }
     .content {
         @apply h-screen bg-white rounded-b pt-12;

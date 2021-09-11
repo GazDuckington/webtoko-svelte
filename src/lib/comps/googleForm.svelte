@@ -1,11 +1,12 @@
 <script>
+    import {authClickGoogle} from "$lib/auth";
     import GoogleIcon from "../atoms/GoogleIcon.svelte";
-    export let mode = "sign in"||"sign up";
+    export let mode;
 </script>
 
-<button class:mode>
+<button on:click={()=>authClickGoogle(mode)}>
     <div><GoogleIcon/></div>
-    <div>{mode} with google</div>
+    <div>{mode}</div>
 </button>
 
 <style>

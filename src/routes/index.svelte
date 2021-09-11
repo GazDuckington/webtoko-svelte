@@ -7,5 +7,5 @@ import Title from "$lib/atoms/title.svelte";
 </svelte:head>
 
 <Title>
-    Testing
+    Gradient Title
 </Title>
