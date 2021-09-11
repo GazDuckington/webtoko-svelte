@@ -1,5 +1,4 @@
 <script>
-    import {authClickGoogle} from "$lib/auth";
     import GoogleIcon from "../atoms/GoogleIcon.svelte";
     export let mode;
 </script>
