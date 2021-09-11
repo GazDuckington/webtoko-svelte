@@ -8,23 +8,22 @@ import Linky from "$lib/atoms/linky.svelte";
 </script>
 
 <dev class="wrapper">
-    <p class="left-0">{view} dengan akun google anda</p>
-    <GoogleForm mode={view}/>
+    <div>
+        <AuthForm mode={view}/>
+    </div>
 
-    <AuthForm mode={view}/>
-
-    {#if view == "sign in"}
+    <div>
+        {#if view == "sign in"}
         <Linky href="signup">belum punya akun?</Linky>
-    {:else}
+        {:else}
         <Linky href="signin">sudah punya akun?</Linky>
-    {/if}
+        {/if}
+    </div>
 </dev>
 
 <style>
     .wrapper {
-        @apply flex flex-col items-center;
-    }
-    p::after, p::before {
-        content: "";
+        @apply p-1 rounded m-20;
+        @apply flex flex-col items-center space-y-1;
     }
 </style>
