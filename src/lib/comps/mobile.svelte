@@ -8,7 +8,7 @@
 
 {#if show}
     <div class="mobile" on:click={()=>(show=!show)}
-         transition:fly={{x:250, y:250}}
+         transition:fly={{x:250}}
          >
         <div class="mobile-menu">
             <Logo/>
@@ -39,15 +39,14 @@
 <style>
     .burger {
         @apply border-2 p-1 rounded-md fixed z-50 bottom-4 right-4 w-8 h-8 block md:hidden;
-        @apply bg-gray-100 border-gray-400 shadow-sm;
-        @apply text-gray-800;
+        @apply bg-gray-100 border-gray-500 shadow-sm;
+        @apply text-gray-500;
     }
 
     .mobile {
         @apply w-3/4 h-full bottom-0;
-        @apply fixed right-0 rounded border-2 border-white block p-2;
-        @apply shadow-xl bg-gradient-to-br from-gray-200;
-        backdrop-filter: blur(10px);
+        @apply fixed right-0 block p-2;
+        @apply shadow-xl border-l-2 border-gray-500 bg-white;
     }
 
     .mobile-menu {
@@ -58,17 +57,4 @@
     .subtitle {
         @apply font-semibold py-1 text-gray-800;
     }
-
-
-   ::-webkit-scrollbar {
-      @apply h-1 w-1;
-   }
-
-   ::-webkit-scrollbar-track {
-   }
-
-   ::-webkit-scrollbar-thumb {
-       @apply bg-gray-500;
-   }
-
 </style>

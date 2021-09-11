@@ -3,8 +3,8 @@
     let view;
 </script>
 <svelte:head>
-    <title>Sign Up</title>
+    <title>Sign In</title>
 </svelte:head>
 
 
-<Auth view='sign up'/>
+<Auth view='sign in'/>
