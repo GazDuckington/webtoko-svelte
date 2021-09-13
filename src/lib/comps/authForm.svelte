@@ -15,7 +15,7 @@
             password,
         })
         if (error) { alert(error.message) }
-        else { $session = sesh }
+        $session = sesh
     }
     async function signup() {
         const { user, session: sesh, error } = await supabase.auth.signUp({
