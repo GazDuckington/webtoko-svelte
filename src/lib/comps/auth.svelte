@@ -7,7 +7,7 @@
 </script>
 
 {#if $user}
-    <h1>you are already logged in</h1>
+    <h1>you are already logged in with: {$user.email}</h1>
 {:else}
 
 <dev class="wrapper">

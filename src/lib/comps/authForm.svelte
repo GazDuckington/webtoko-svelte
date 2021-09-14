@@ -34,7 +34,7 @@
 <div class="provider">
     <p class="pb-1">{mode} dengan akun google anda</p>
     <GoogleForm mode={mode}/>
-    <form on:submit|preventDefault={signup}>
+    <form on:submit={signup}>
         <p>atau, gunakan email</p>
         <input bind:value={email} type="email" name="email" id="email" placeholder="email" required>
         <input bind:value={password} type="password" name="password" id="password" placeholder="password" required minlength="10">
@@ -49,7 +49,7 @@
 <div class="provider">
     <p class="pb-1">{mode} dengan akun google anda</p>
     <GoogleForm mode={mode}/>
-    <form on:submit|preventDefault={signin}>
+    <form on:submit={signin}>
         <p>atau, gunakan email</p>
         <input bind:value={email} type="email" name="email" id="email" placeholder="email" required>
         <input bind:value={password} type="password" name="password" id="password" placeholder="password" required minlength="10">

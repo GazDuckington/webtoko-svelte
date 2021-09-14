@@ -3,6 +3,7 @@
     import Navbar from "$lib/comps/navbar.svelte";
     import supabase from "$lib/db";
     import { session } from "$app/stores";
+    import { user } from "$lib/db";
     import {browser} from "$app/env";
 
     // supabase.auth.onAuthStateChange((event, sesh) => {
@@ -19,6 +20,9 @@
     <!-- content -->
     <div class="content">
         <slot />
+        <p>
+            {JSON.stringify($user)}
+        </p>
 
     <p class="w-96 overflow-scroll">
         {JSON.stringify($session)}
