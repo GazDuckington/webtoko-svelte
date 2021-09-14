@@ -26,11 +26,10 @@ import QuickCart from "./quickCart.svelte";
 <style lang="postcss">
 
     .navbar {
-        @apply p-2 pb-0 fixed;
-        @apply flex space-x-1 justify-between w-full;
+        @apply p-2 fixed w-full;
+        @apply flex space-x-1 justify-between;
         @apply shadow-sm font-semibold bg-white;
     }
-
     .primary {
         @apply hidden md:flex md:space-x-1;
     }

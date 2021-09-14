@@ -3,7 +3,6 @@
     import Button from "$lib/atoms/button.svelte";
     import GoogleForm from "./googleForm.svelte";
     import supabase from "$lib/db";
-    import { session } from "$app/stores";
     
     export let mode: string;
     let notif = "";
@@ -15,7 +14,7 @@
             password,
         })
         if (error) { alert(error.message) }
-        $session = sesh
+        else { goto('/')}
     }
     async function signup() {
         const { user, session: sesh, error } = await supabase.auth.signUp({
@@ -23,7 +22,7 @@
             password,
         })
         if (error) { alert(error.message) }
-        $session = sesh
+        else { goto('/') }
     }
 </script>
 

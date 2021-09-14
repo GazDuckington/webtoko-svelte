@@ -12,20 +12,20 @@
     $: console.log($session)
 </script>
 
-<div class="body">
-    <!-- navigation bar -->
-    <div class="navbar">
-        <Navbar />
-    </div>
+<!-- navigation bar -->
+<div class="navbar">
+    <Navbar />
+</div>
+
+<div class="body">    
     <!-- content -->
     <div class="content">
         <slot />
         <p>
-            {JSON.stringify($user)}
         </p>
 
     <p class="w-96 overflow-scroll">
-        {JSON.stringify($session)}
+        {JSON.stringify($user)}
     </p>
     </div>
 </div>
@@ -34,17 +34,14 @@
 <div class="footer" />
 
 <style lang="postcss">
-    .navbar {
-        @apply w-full;
-    }
     .body {
-        @apply flex flex-col static;
+        @apply flex flex-col static p-1;
         @apply bg-gradient-to-tr from-green-500 to-blue-300;
         background-size: 300%;
         animation: bg-animation 25s infinite alternate;
     }
     .content {
-        @apply h-screen bg-white rounded-b pt-12;
+        @apply h-screen bg-white rounded mt-10 p-1;
         background-filter: blur(30px);
     }
 
