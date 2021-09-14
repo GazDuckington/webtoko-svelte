@@ -1,4 +1,5 @@
 <script>
+import MenuUser from "$lib/atoms/menuUser.svelte";
 import Title from "$lib/atoms/title.svelte";
 </script>
 
@@ -9,3 +10,5 @@ import Title from "$lib/atoms/title.svelte";
 <Title>
     Gradient Title
 </Title>
+
+<MenuUser/>

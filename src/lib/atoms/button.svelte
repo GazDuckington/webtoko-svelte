@@ -25,7 +25,7 @@
 
     .primary {
         @apply bg-red-500 text-white; 
-        @apply rounded p-1.5 pt-0.5;
+        @apply rounded p-1.5 pt-0.5 pb-0.5;
         &:hover {
             @apply bg-red-400;
         }
@@ -33,7 +33,7 @@
 
     .secondary {
         @apply bg-green-500 text-white; 
-        @apply rounded p-1.5 pt-0.5;
+        @apply rounded p-1.5 pt-0.5 pb-0.5;
         &:hover {
             @apply bg-green-400;
         }
@@ -41,14 +41,14 @@
 
     .primary.accent {
         @apply text-red-500 bg-white border-red-500;
-        @apply rounded p-1.5 border-2 pt-0.5;
+        @apply rounded p-1.5 border-2 pt-0.5 pb-0.5;
         &:hover {
             @apply bg-red-400 text-white border-red-400;
         }
     }
     .secondary.accent {
         @apply text-green-500 bg-white border-green-500;
-        @apply rounded p-1.5 border-2 pt-0.5;
+        @apply rounded p-1.5 border-2 pt-0.5 pb-0.5;
         &:hover {
             @apply bg-green-400 text-white border-green-400;
         }

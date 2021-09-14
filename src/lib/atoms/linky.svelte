@@ -7,7 +7,7 @@
 
 <style lang="postcss">
     a {
-        @apply bg-clip-text;
+        @apply bg-clip-text font-medium;
     }
     a:hover{
         @apply text-transparent bg-gradient-to-tr from-green-500 to-blue-500;

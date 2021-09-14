@@ -2,6 +2,7 @@
     import Logo from "$lib/atoms/logo.svelte";
     import {fly} from "svelte/transition";
     import Linky from "$lib/atoms/linky.svelte";
+    import MenuUser from "$lib/atoms/menuUser.svelte";
 
     let show = false;
 </script>
@@ -15,8 +16,7 @@
             <p class="subtitle">Cart</p>
             <p class="subtitle">Accounts</p>
             <div class="hl"></div>
-            <Linky href="signin">Sign In</Linky>
-            <Linky href="signup">Sign Up</Linky>
+            <MenuUser/>
             <p class="subtitle">Miscellaneous</p>
             <div class="hl"></div>
             <Linky href="blog">Blog</Linky>
@@ -51,7 +51,7 @@
 
     .mobile-menu {
         @apply flex flex-col;
-        @apply h-full overflow-scroll;
+        @apply h-full overflow-hidden;
     }
 
     .subtitle {

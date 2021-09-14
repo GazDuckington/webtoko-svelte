@@ -1,8 +1,9 @@
 <script>
     import Linky from "$lib/atoms/linky.svelte";
     import Logo from "$lib/atoms/logo.svelte";
+import MenuUser from "$lib/atoms/menuUser.svelte";
     import Mobile from "./mobile.svelte";
-import QuickCart from "./quickCart.svelte";
+    import QuickCart from "./quickCart.svelte";
 </script>
 
 
@@ -12,9 +13,7 @@ import QuickCart from "./quickCart.svelte";
     </div>
     <div class="menus">
         <div class="primary">
-            <a href="signin">Sign In</a>
-            <a href="signup">Sign Up</a>
-            <a href="blog">Blog</a>
+            <MenuUser/>
         </div>
         <div class="cart">
            <QuickCart/>
@@ -28,10 +27,10 @@ import QuickCart from "./quickCart.svelte";
     .navbar {
         @apply p-2 fixed w-full;
         @apply flex space-x-1 justify-between;
-        @apply shadow-sm font-semibold bg-white;
+        @apply shadow-sm bg-white;
     }
     .primary {
-        @apply hidden md:flex md:space-x-1;
+        @apply hidden md:flex gap-1;
     }
 
     .menus {
