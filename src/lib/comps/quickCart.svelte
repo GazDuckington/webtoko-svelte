@@ -24,7 +24,7 @@
 
 </div>
 
-<style>
+<style lang="postcss">
     .quick-cart {
         @apply fixed rounded-md right-0 mt-5 mr-2 z-50 block p-5;
         @apply shadow-xl border-2 border-gray-500 bg-white;

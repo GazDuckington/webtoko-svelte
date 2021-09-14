@@ -62,7 +62,7 @@
 </div>
 {/if}
 
-<style>
+<style lang="postcss">
     .submit {
         @apply text-right;
     }

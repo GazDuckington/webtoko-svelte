@@ -23,7 +23,7 @@ import QuickCart from "./quickCart.svelte";
 </div>
 <Mobile/>
 
-<style>
+<style lang="postcss">
 
     .navbar {
         @apply p-2 pb-0 fixed;

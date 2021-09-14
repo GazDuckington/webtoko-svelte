@@ -18,7 +18,7 @@
     </button>
 {/if}
 
-<style>
+<style lang="postcss">
     a, button {
         @apply font-semibold;
     }

@@ -29,7 +29,7 @@
 <!-- footer -->
 <div class="footer" />
 
-<style>
+<style lang="postcss">
     .navbar {
         @apply w-full;
     }

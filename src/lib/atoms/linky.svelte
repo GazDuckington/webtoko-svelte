@@ -5,7 +5,7 @@
     <slot></slot>
 </a>
 
-<style>
+<style lang="postcss">
     a {
         @apply bg-clip-text;
     }

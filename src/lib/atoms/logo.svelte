@@ -5,7 +5,7 @@
     <span>Logo</span>
 </a>
 
-<style>
+<style lang="postcss">
     a:hover {
         @apply text-green-500;
     }

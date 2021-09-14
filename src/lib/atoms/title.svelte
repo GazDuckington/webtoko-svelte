@@ -2,7 +2,7 @@
    <slot></slot>
 </h1>
 
-<style>
+<style lang="postcss">
     @keyframes bg-animation {
         0% {background-position: left}
         50% {background-position: right}

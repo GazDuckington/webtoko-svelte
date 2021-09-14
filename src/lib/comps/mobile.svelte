@@ -36,7 +36,7 @@
     {/if}
 </button>
 
-<style>
+<style lang="postcss">
     .burger {
         @apply border-2 p-1 rounded-md fixed z-50 bottom-4 right-4 w-8 h-8 block md:hidden;
         @apply bg-gray-100 border-gray-500 shadow-sm;

@@ -19,7 +19,7 @@
     </div>
 </button>
     
-<style>
+<style lang="postcss">
 button {
     @apply p-1 font-semibold;
     @apply border-2 rounded;
